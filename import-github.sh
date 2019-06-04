@@ -1,3 +1,7 @@
+#!/bin/bash
+
+
+#Delete folder if exists
 rm -Rf /ressources 
 
 #Get Json file 
