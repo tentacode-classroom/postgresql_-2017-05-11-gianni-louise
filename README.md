@@ -6,13 +6,32 @@
 
 ## 3 - Script "Create Event Database" 
 Pour pouvoir utiliser ce script, vous devez avoir démarré le service postgres : 
-`sudo service postgresql start` 
+```
+sudo service postgresql start
+```
 
 ## 4 - Script "Configure"
 
 
 ## 5 - Script "Create Users" 
 Pour pouvoir utiliser ce script, vous devez avoir démarré le service postgres : 
-`sudo service postgresql start` 
+```
+sudo service postgresql start
+```
+
+Une fois le script éxecuté, il faut modifier le fichier `pg_hba.conf`
+Le chemin qui devrait mener au fichier : `/etc/postgresql/11/main/pg_hba.conf`
+Vous devez ajouter les lignes ⬇
+
+```
+local all super_admin md5 
+local all github_events md5 
+```
+
+Vous pouvez également enregistrer le mot de passe des utilisateurs en créant le fichier `~/.pgpass`
+Et y ajouter les lignes suivantes : 
+
+```
+```
 
 ## 6 - 
