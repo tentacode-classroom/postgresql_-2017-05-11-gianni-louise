@@ -2,9 +2,23 @@
 
 ## 1 - Script "Set-Up Postgres"
 
+**But du script :**
+Créer et mettre en place tout le schéma de la base de donnée `github_events` 
+
+---
+
 ## 2 - Script "Import Github"
 
+**But du script :**
+Créer et mettre en place tout le schéma de la base de donnée `github_events` 
+
+***
+
 ## 3 - Script "Create Event Database" 
+
+**But du script :**
+Créer et mettre en place tout le schéma de la base de donnée `github_events` 
+
 Pour pouvoir utiliser ce script, vous devez avoir démarré le service postgres : 
 ```
 sudo service postgresql start
@@ -12,13 +26,15 @@ sudo service postgresql start
 
 ## 4 - Script "Configure"
 
-**Modifier la configuration : changer le port pour `1234` et configurer la mémoire pour une traitement efficace des données**
+**But du script :**
+Modifier la configuration : changer le port pour `1234` et configurer la mémoire pour une traitement efficace des données
 
 ## 5 - Script "Create Users" 
 
-**Créer deux utilisateurs :** 
+**But du script :**
+Créer deux utilisateurs : 
 * un utilisateur `super_admin` avec un role de superuser et pour mot de passe `12345`. La base de donnée `super_admin` lui sera attribuée.** 
-* un utilisateur `github_eventss` avec pour mot de passe `12345`. La base de donnée `github_events` lui sera attribuée.**
+* un utilisateur `github_events` avec pour mot de passe `12345`. La base de donnée `github_events` lui sera attribuée.**
 
 Pour pouvoir utiliser ce script, vous devez avoir démarré le service postgres : 
 ```
