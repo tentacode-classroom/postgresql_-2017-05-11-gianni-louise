@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Create Event Database : [started]"
+echo ""
+
 #Start service 
 #sudo service postgresql start 
 

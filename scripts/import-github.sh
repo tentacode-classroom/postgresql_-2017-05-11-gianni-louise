@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Import GitHub : [started]"
+echo ""
 
 #Delete folder if exists
 rm -Rf ../ressources 

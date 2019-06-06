@@ -27,6 +27,11 @@ Vous devez ajouter les lignes ⬇
 local all super_admin md5 
 local all github_events md5 
 ```
+Executer la commande 
+```
+chmod 600 ~/.pgpass
+```
+
 
 Vous pouvez également enregistrer le mot de passe des utilisateurs en créant le fichier `~/.pgpass`
 Et y ajouter les lignes suivantes : 
@@ -42,4 +47,7 @@ Et y ajouter les lignes suivantes :
 127.0.0.1:5432:github_events:github_events:12345
 ```
 
-## 6 - 
+
+Vous pouvez désormais vous connecter simplement avec la commande `psql --username=[nom du user]`
+
+## 6 - Script "Populate Raw Events"
