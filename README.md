@@ -10,9 +10,14 @@ Créer et mettre en place tout le schéma de la base de donnée `github_events`
 ## 2 - Script "Import Github"
 
 **But du script :**
-Créer et mettre en place tout le schéma de la base de donnée `github_events` 
+Récupérer le fichier via l'URL fournie par GH Archive qui correspond à la date que nous avons choisi. 
+`https://data.gharchive.org/[année]-[mois]-[jour]-[heure(s)].json.gz`
 
-***
+On obtient donc l'URL `https://data.gharchive.org/2017-05-11-2.json.gz`
+
+Puis le dézipper pour obtenir notre fichier JSON qui sera mis dans le dossier `ressources/`
+
+---
 
 ## 3 - Script "Create Event Database" 
 
@@ -24,10 +29,14 @@ Pour pouvoir utiliser ce script, vous devez avoir démarré le service postgres 
 sudo service postgresql start
 ```
 
+---
+
 ## 4 - Script "Configure"
 
 **But du script :**
-Modifier la configuration : changer le port pour `1234` et configurer la mémoire pour une traitement efficace des données
+Modifier la configuration en changeant le port pour `1234` et en configurant la mémoire pour une traitement efficace des données
+
+--- 
 
 ## 5 - Script "Create Users" 
 
@@ -70,5 +79,7 @@ chmod 600 ~/.pgpass
 ```
 
 Vous pouvez désormais vous connecter simplement avec la commande `psql --username=[nom du user]`
+
+--- 
 
 ## 6 - Script "Populate Raw Events"
