@@ -1,3 +1,5 @@
+-- **************************** CREATE DATABASE ****************************
+
 --Create database 
 DROP DATABASE IF EXISTS github_events;
 CREATE DATABASE github_events; 
@@ -32,10 +34,13 @@ CREATE TABLE event (
 
 --Create table "issue_event" (child)
 CREATE TABLE issue_event (
-	issue_url varchar(255) NOT NULL
+	issue_url varchar(255) NOT NULL, 
+    issue_title varchar(255) NOT NULL
 ) INHERITS (event);
 
 --Create table "push_event" (child)
 CREATE TABLE push_event (
 	nb_commits int NOT NULL
 ) INHERITS (event);
+
+-- **************************** INSERT INTO DATABASE ****************************
