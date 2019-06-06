@@ -32,6 +32,9 @@ Vous pouvez également enregistrer le mot de passe des utilisateurs en créant l
 Et y ajouter les lignes suivantes : 
 
 ```
+#Pattern 
+# hostname:port:database:username:password
+
 #User super_admin
 127.0.0.1:5432:super_admin:super_admin:12345
 
