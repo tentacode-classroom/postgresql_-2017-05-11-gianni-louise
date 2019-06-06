@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo ""
 echo "Import GitHub : [started]"
 echo ""
 

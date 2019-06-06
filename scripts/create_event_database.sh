@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo ""
 echo "Create Event Database : [started]"
 echo ""
 

@@ -14,6 +14,13 @@ sudo service postgresql start
 
 
 ## 5 - Script "Create Users" 
+
+**
+Créer deux utilisateurs : 
+- un utilisateur `super_admin` avec un role de superuser et pour mot de passe `12345`. La base de donnée `super_admin` lui sera attribuée. 
+- un utilisateur `github_events` avec pour mot de passe `12345`. La base de donnée `github_events` lui sera attribuée. 
+**
+
 Pour pouvoir utiliser ce script, vous devez avoir démarré le service postgres : 
 ```
 sudo service postgresql start
@@ -41,10 +48,10 @@ Et y ajouter les lignes suivantes :
 # hostname:port:database:username:password
 
 #User super_admin
-127.0.0.1:5432:super_admin:super_admin:12345
+*:*:*:super_admin:12345
 
 #User github_events
-127.0.0.1:5432:github_events:github_events:12345
+*:*:*:github_events:12345
 ```
 
 
