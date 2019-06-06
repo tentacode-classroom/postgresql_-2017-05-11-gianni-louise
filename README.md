@@ -3,7 +3,7 @@
 ## 1 - Script "Set-Up Postgres"
 
 **But du script :**
-Créer et mettre en place tout le schéma de la base de donnée `github_events` 
+Télécharger et installer `postgresql-11` via les sources.
 
 ---
 
