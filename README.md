@@ -1,20 +1,20 @@
-##Projet PostGreSQL
+#Projet PostGreSQL
 
-### 1 - Script "Set-Up Postgres"
+## 1 - Script "Set-Up Postgres"
 
-### 2 - Script "Import Github"
+## 2 - Script "Import Github"
 
-### 3 - Script "Create Event Database" 
+## 3 - Script "Create Event Database" 
 Pour pouvoir utiliser ce script, vous devez avoir démarré le service postgres : 
 ```
 sudo service postgresql start
 ```
 
-### 4 - Script "Configure"
+## 4 - Script "Configure"
 
 **Modifier la configuration : changer le port pour `1234` et configurer la mémoire pour une traitement efficace des données**
 
-### 5 - Script "Create Users" 
+## 5 - Script "Create Users" 
 
 **Créer deux utilisateurs :** 
 **- un utilisateur `super_admin` avec un role de superuser et pour mot de passe `12345`. La base de donnée `super_admin` lui sera attribuée.** 
@@ -55,4 +55,4 @@ chmod 600 ~/.pgpass
 
 Vous pouvez désormais vous connecter simplement avec la commande `psql --username=[nom du user]`
 
-### 6 - Script "Populate Raw Events"
+## 6 - Script "Populate Raw Events"
