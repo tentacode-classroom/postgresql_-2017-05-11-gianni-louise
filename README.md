@@ -1,4 +1,4 @@
-#Projet PostGreSQL
+# Projet PostGreSQL
 
 ## 1 - Script "Set-Up Postgres"
 
