@@ -90,3 +90,14 @@ Vous pouvez désormais vous connecter simplement avec la commande `psql --userna
 
 Installer le paquet 
 ```sudo apt-get install php7.0-pgsql```
+
+Pour éxecuter le script php seul, utiliser la commande : 
+```php populate_events.php```
+
+## 7 - Installation de pg_admin`
+
+## 8 - Script "Populate Events"
+
+## 9 - Vues Statistiques 
+
+## 10 - BackUp 
