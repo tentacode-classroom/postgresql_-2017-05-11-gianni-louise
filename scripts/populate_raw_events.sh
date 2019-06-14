@@ -4,11 +4,9 @@ echo ""
 echo "Populate Raw Events : [started]"
 echo ""
 
-sudo -u postgres psql -f ../sql/populate_raw_events.sql
+# Create database events_raw
+sudo psql --username super_admin -f ../sql/create_raw_db.sql
 
 
-#sed -n '2p' 2017-05-11-2.json ;
-
-#for line in $(cat 2017-05-11-2.json);
-#    do sed -n $line'p' 2017-05-11-2.json ;
-#done 
+# Run script PHP who get JSON and put it into table event_raw we have just created
+php populate_events.php
