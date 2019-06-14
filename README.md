@@ -85,13 +85,13 @@ Vous pouvez désormais vous connecter simplement avec la commande `psql --userna
 ## 6 - Script "Populate Raw Events"
 
 **But du script :**
-* Créer une table `event_raw` dans la base de données ``github_events` qui récupèrera chaque ligne de la ressource JSON
+* Créer une table `event_raw` dans la base de données `github_events` qui récupèrera chaque ligne de la ressource JSON
 * Créer un script qui récupèrera le JSON et découpera chaque ligne pour les entrer dans la table `event_raw`
 
 Installer le paquet 
 ```sudo apt-get install php7.0-pgsql```
 
-Pour éxecuter le script php seul, utiliser la commande : 
+Pour exécuter le script php seul, utiliser la commande : 
 ```php populate_events.php```
 
 ## 7 - Installation de pg_admin`
