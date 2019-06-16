@@ -33,6 +33,11 @@ CREATE TABLE event (
 );
 
 --Create table "issue_event" (child)
+CREATE TABLE events_raw
+(
+	json_data JSONB NOT NULL
+);
+
 CREATE TABLE issue_event (
 	issue_url varchar(255) NOT NULL, 
     issue_title varchar(255) NOT NULL
