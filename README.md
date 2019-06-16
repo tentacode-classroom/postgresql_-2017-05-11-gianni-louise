@@ -96,8 +96,15 @@ Pour exécuter le script php seul, utiliser la commande :
 
 ## 7 - Installation de pg_admin`
 
+Lancer la commande
+```bash setup_pg_admin.sh```
+
 ## 8 - Script "Populate Events"
 
-## 9 - Vues Statistiques 
+Lancer la commande
+```bash populate_events.sh```
 
 ## 10 - BackUp 
+
+Lancer la commande
+```bash save.sh```
