@@ -97,7 +97,7 @@ Pour exécuter le script php seul, utiliser la commande :
 ## 7 - Installation de pg_admin`
 
 Lancer la commande
-```bash setup_pg_admin.sh```
+```bash pg_admin_install.sh```
 
 ## 8 - Script "Populate Events"
 
